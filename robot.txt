@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.absystemlabs.com/sitemap.xml

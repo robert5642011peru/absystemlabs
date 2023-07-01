@@ -51,6 +51,11 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-730360616');
+
+
+
+
+  
 </script>
 
 
@@ -898,7 +903,9 @@ Ayudar a cumplir metas y sueños
     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAbsystemlab%2Fposts%2Fpfbid0skURYsB7uTPQSpG4Q8Md5n8f1Hist67psyFWNcDAGw41UPqayFcFPchdciepdRTml&show_text=true&width=500" width="500" height="455" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
   </div>
+<button id="sendButton">Enviar</button>
 
+ 
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -1065,6 +1072,7 @@ Ayudar a cumplir metas y sueños
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1103,6 +1111,51 @@ Ayudar a cumplir metas y sueños
   "url": "https://www.absystemlabs.com"
 }
 </script>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Datos del correo electrónico
+      const emailData = {
+        sender: {
+          name: 'ABSYSTEMLABS',
+          email: 'absystemlabs@gmail.com'
+        },
+        to: [
+          {
+            email: 'absystemlabs@gmail.com',
+            name: 'John Doe'
+          }
+        ],
+        subject: 'Hello world',
+        htmlContent: '<html><head></head><body><p>Hello,</p>This is my first transactional email sent from Brevo.</p></body></html>'
+      };
 
+      // Configuración de la solicitud
+      const apiURL = 'https://api.brevo.com/v3/smtp/email';
+      const apiKey = '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';
+
+      // Obtener referencia al botón en el HTML
+      const sendButton = document.getElementById('sendButton');
+
+      // Agregar el evento click al botón
+      sendButton.addEventListener('click', function() {
+        // Realizar la solicitud POST
+        axios.post(apiURL, emailData, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'api-key': apiKey
+          }
+        })
+          .then(response => {
+            console.log('Correo electrónico enviado con éxito');
+            console.log(response.data);
+          })
+          .catch(error => {
+            console.error('Error al enviar el correo electrónico');
+            console.error(error.response.data);
+          });
+      });
+    });
+  </script>
 </body>
 </html>

@@ -1110,8 +1110,8 @@ Ayudar a cumplir metas y sueños
               Peru, lima <br>
               
               
-              <strong>Numero:</strong><a href="tel:+51998173390"> +51998173390</a><br>
-              <strong>Email:</strong>Robert5642011@gmail.com<br>
+              <strong>Numero:</strong><a href="tel:+51998173390" alt="Numero de contacto +51998173390"> +51998173390</a><br>
+              <strong>Email:</strong><a href="mailto:absystemlabs@gmail.com" alt="Correo electronico absystemlabs@gmail.com"> absystemlabs@gmail.com </a><br>
             </p>
 
             <div class="social-links">
@@ -1140,7 +1140,7 @@ Ayudar a cumplir metas y sueños
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>ABSYSTEMLABS</strong>. All Rights Reserved
+        &copy; <span id="ano"></span> Copyright <strong>ABSYSTEMLABS</strong>. All Rights Reserved
       </div>
       <div class="credits">
         Elaborado por ABSYSTEMLABS
@@ -1157,7 +1157,7 @@ Ayudar a cumplir metas y sueños
     <div class='header-chat'>
       <div class='head-home'>
         <div class='info-avatar'><img src='img/wprobert.jpeg'alt="ABSYSTEMLABS" /></div>
-        <p><span class="whatsapp-name">Robert hernandez</span><br><small id="small">Programador</small></p>
+        <p><span class="whatsapp-name">Robert Hernandez</span><br><small id="small">Programador</small></p>
   
       </div>
       <div class='get-new hide'>
@@ -1182,7 +1182,7 @@ Ayudar a cumplir metas y sueños
          
   
   
-            <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">Robert hernandez</div>
+            <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">Robert Hernandez</div>
             <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">Hola 👋 ¿Cómo puedo ayudarte?                                             
               
             
@@ -1237,6 +1237,19 @@ Ayudar a cumplir metas y sueños
     js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
+
+
+
+  // Obtén el elemento <span> por su id
+var spanAno = document.getElementById("ano");
+
+// Obtiene el año actual
+var fechaActual = new Date();
+var anoActual = fechaActual.getFullYear();
+
+// Establece el contenido del elemento <span> con el año actual
+spanAno.textContent = anoActual;
+
 </script>
 
 

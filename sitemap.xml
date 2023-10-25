@@ -11,4 +11,18 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://www.absystemlabs.com/politica.html</loc>
+    <lastmod>2023-10-25T08:00:00+00:00</lastmod> <!-- Ajusta la fecha y hora según corresponda -->
+    <changefreq>monthly</changefreq> <!-- Ajusta la frecuencia de cambio según corresponda -->
+    <priority>0.8</priority> <!-- Ajusta la prioridad según corresponda -->
+  </url>
+
+  <url>
+    <loc>https://www.absystemlabs.com/terminos.html</loc>
+    <lastmod>2023-10-25T08:00:00+00:00</lastmod> <!-- Ajusta la fecha y hora según corresponda -->
+    <changefreq>monthly</changefreq> <!-- Ajusta la frecuencia de cambio según corresponda -->
+    <priority>0.8</priority> <!-- Ajusta la prioridad según corresponda -->
+  </url>
+
 </urlset>

@@ -72,7 +72,9 @@
     });
   } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
+    // Agregar nombres de accesibilidad a los botones
   }
+  $('#mobile-nav-toggle').attr('aria-label', 'Alternar menú de navegación móvil');
 
   // Header scroll class
   $(window).scroll(function() {

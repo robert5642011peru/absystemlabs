@@ -7,7 +7,7 @@
   <title>ABSYSTEMLABS - Solution Code</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta name="description" content="ABSYTEMLABS, empresa de programación web, diseño y desarrollo de aplicaciones, y optimización SEO. Cumplimos tus metas y sueños en el mundo digital.">
-<meta name="keywords" content="programación web, desarrollo web, diseño web, aplicaciones web, optimización SEO,precios de diseño web,página web, costo por pagina web, ABSYTEMLABS">
+<meta name="keywords" content="landing page, programación web, desarrollo web, diseño web, aplicaciones web, optimización SEO,precios de diseño web,página web, costo por pagina web, ABSYTEMLABS">
 <meta name="author" content="ABSYTEMLABS">
 <meta name="robots" content="index, follow">
 <meta name="language" content="Spanish">
@@ -95,14 +95,14 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
+  <section id="intro" role="region" aria-label="Introducción">
     <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
+      <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel" role="region" aria-label="Carrusel de introducción">
+  
         <ol class="carousel-indicators"></ol>
-
+  
         <div class="carousel-inner" role="listbox">
-
+  
           <div class="carousel-item active">
             <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt="ABSYSTEMLABS"></div>
             <div class="carousel-container">
@@ -113,18 +113,18 @@
               </div>
             </div>
           </div>
-
+  
           <div class="carousel-item">
             <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt="ABSYSTEMLABS"></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>Contamos con el mejor equipo de trabajo</h2>
-                <p>Nuestro equipo de trabajo emplea Python, Django, PHP, Laravel, Javascript, CSS, </p>
+                <p>Nuestro equipo de trabajo emplea Python, Django, PHP, Laravel, Javascript, CSS</p>
                 <a href="#featured-services" class="btn-get-started scrollto">Empezar</a>
               </div>
             </div>
           </div>
-
+  
           <div class="carousel-item">
             <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt="ABSYSTEMLABS Solution code"></div>
             <div class="carousel-container">
@@ -135,55 +135,66 @@
               </div>
             </div>
           </div>
-
-        
-
+  
         </div>
-
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+  
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev" aria-label="Anterior">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+  
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next" aria-label="Siguiente">
           <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-
+  
       </div>
     </div>
   </section><!-- #intro -->
+  
 
   <main id="main">
 
     <!--==========================
       Featured Services Section
     ============================-->
-    <section id="featured-services">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 box">
-            <i class="ion-ios-bookmarks-outline"></i>
-            <h4 class="title">E-commerce</h4>
-            <p class="description">Diseña tu tienda E-commerce</p>
-          </div>
-
-          <div class="col-lg-4 box box-bg">
-            <i class="ion-ios-stopwatch-outline"></i>
-            <h4 class="title">Apps Android</h4>
-            <p class="description">Diseña tus apps Móviles Android</p>
-          </div>
-
-          <div class="col-lg-4 box">
-            <i class="ion-ios-heart-outline"></i>
-            <h4 class="title">Sistemas Administrativos</h4>
-            <p class="description">Diseñamos tu sistema web</p>
-          </div>
-
-        </div>
+<section id="featured-services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 box">
+        <article>
+          <h2>Lading page</h2>
+          <p>Diseñamos tu web informativa</p>
+        </article>
       </div>
-    </section><!-- #featured-services -->
+     
+
+      <div class="col-lg-6 box box">
+        <article>
+          <h2>Apps Android</h2>
+          <p>Diseña tus apps Móviles Android</p>
+        </article>
+      </div>
+
+      <div class="col-lg-6 box">
+        <article>
+          <h2>Sistemas Administrativos</h2>
+          <p>Diseñamos tu sistema web</p>
+        </article>
+      </div>
+
+      <div class="col-lg-6 box">
+        <article>
+          <h2>E-commerce</h2>
+          <p>Diseña tu tienda E-commerce</p>
+        </article>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
 
     <!--==========================
       About Us Section
@@ -306,51 +317,50 @@ Ayudar a cumplir metas y sueños
     ============================-->
     <section id="skills">
       <div class="container">
-
         <header class="section-header">
           <h3>NUESTRAS HABILIDADES</h3>
         </header>
-
         <div class="skills-content">
-
+    
           <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Habilidades en HTML: 100%">
               <span class="skill">HTML <i class="val">100%</i></span>
             </div>
           </div>
-
+    
           <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Habilidades en CSS: 90%">
               <span class="skill">CSS <i class="val">90%</i></span>
             </div>
           </div>
-
+    
           <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Habilidades en JavaScript: 75%">
               <span class="skill">JavaScript <i class="val">75%</i></span>
             </div>
           </div>
-
+    
           <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Habilidades en Laravel: 88%">
               <span class="skill">LARAVEL <i class="val">88%</i></span>
             </div>
           </div>
+    
           <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">php <i class="val">80%</i></span>
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Habilidades en PHP: 55%">
+              <span class="skill">PHP <i class="val">55%</i></span>
             </div>
           </div>
-
+    
           <div class="progress">
-            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" aria-label="Habilidades en Python: 98%">
               <span class="skill">Python <i class="val">98%</i></span>
             </div>
           </div>
         </div>
-
       </div>
     </section>
+    
 
     <!--==========================
       Facts Section
@@ -807,29 +817,21 @@ Ayudar a cumplir metas y sueños
       </div>
     </section><!-- #portfolio -->
 
-    <!--==========================
-      Clients Section
+    
 
-    <section id="clients" class="wow fadeInUp">
+    <section id="cursos" class="wow fadeInUp">
       <div class="container">
-
         <header class="section-header">
-          <h3>Nuestros Clientes</h3>
+          <h3>Curso Android Studio</h3>
         </header>
-
+    
         <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="ABSYSTEMLABS">
-          <img src="img/clients/client-2.png" alt="ABSYSTEMLABS">
-          <img src="img/clients/client-3.png" alt="ABSYSTEMLABS">
-          <img src="img/clients/client-4.png" alt="ABSYSTEMLABS">
-          <img src="img/clients/client-5.png" alt="ABSYSTEMLABS">
-          <img src="img/clients/client-6.png" alt="ABSYSTEMLABS">
-          <img src="img/clients/client-7.png" alt="ABSYSTEMLABS">
-          <img src="img/clients/client-8.png" alt="ABSYSTEMLABS">
-        </div>
-
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/LzJHzjxOkEc?si=QjOjXh_cJWp0EDHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+          </div>
       </div>
-    </section>    ============================--><!-- #clients -->
+    </section>
+     
 
     <!--==========================
       Clients Section
@@ -1079,7 +1081,7 @@ Ayudar a cumplir metas y sueños
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>ABSYSTEMLABS - Solution code</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d785.3192441231935!2d-77.03695512521965!3d-12.110777909091867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1684014294409!5m2!1ses-419!2spe" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d785.3192441231935!2d-77.03695512521965!3d-12.110777909091867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1684014294409!5m2!1ses-419!2spe" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de ABSYSTEMLABS"></iframe>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -1105,9 +1107,13 @@ Ayudar a cumplir metas y sueños
             </p>
 
             <div class="social-links">
-              <a href="https://www.facebook.com/Absystemlab" class="facebook"><i class="fa fa-facebook"></i></a>
-            <!--  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
-              <a href="https://www.linkedin.com/in/robert-hernández-060974215" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/Absystemlab" class="facebook" aria-label="Página de Facebook de ABSYSTEMLABS">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/robert-hernández-060974215" class="linkedin" aria-label="Perfil de LinkedIn de Robert Hernández">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              
             </div>
 
           </div>

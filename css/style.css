@@ -2921,7 +2921,6 @@ textarea {
   color: #404040;
   position: fixed;
   display: none;
-  max-width: 7%;
   font-weight: 400;
   justify-content: space-between;
   z-index: 98;
@@ -3267,6 +3266,10 @@ button.close-chat {
   .abrobot .col-lg-5 img {
     margin-left: 94px;
   }
+  .blantershow-chat {
+    max-width: 7%; 
+  }
+  
 }
 
   /* Estilo del borde destellante */

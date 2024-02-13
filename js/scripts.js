@@ -425,12 +425,33 @@ $(document).on("click", "#send-it", function() {
       .addClass("hide")
       .removeClass("show");
   }),
-  $(document).on("click", ".blantershow-chat", function() {
+  $(document).on("click", ".open", function() {
     $("#whatsapp-chat")
       .addClass("show")
       .removeClass("hide");
   });
 
+  $(document).on("click", ".cerrar-burbuja", function() {
+    $("#burbuja").addClass("hide")
+    $("#cerrar-burbuja").addClass("hide")
+  });
+
+  window.addEventListener('scroll', function() {
+    var abrobotSection = document.querySelector('.abrobot');
+    var chatContainer = document.getElementById('chat-container');
+
+    if (abrobotSection) {
+      var abrobotTop = abrobotSection.offsetTop; // Posición superior de la sección abrobot
+      var abrobotBottom = abrobotTop + abrobotSection.offsetHeight; // Posición inferior de la sección abrobot
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Posición actual de desplazamiento vertical
+
+      // Verificar si el usuario está dentro de la sección abrobot
+      if (scrollTop >= abrobotTop && scrollTop <= abrobotBottom) {
+        // Mostrar la burbuja y el botón de cerrar
+        chatContainer.style.display = 'flex';
+      }
+    }
+  });
   /////////////////
 
 

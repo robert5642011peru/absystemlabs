@@ -2907,21 +2907,19 @@ textarea {
   animation-duration: 1s;
   transform: scale(1);
 }
-button.blantershow-chat {
-  background: #647573;
+.blantershow-chat {
   color: #404040;
   position: fixed;
-  display: flex;
+  display: none;
+  max-width: 7%;
   font-weight: 400;
   justify-content: space-between;
   z-index: 98;
   bottom: 25px;
-  right: 30px;
+  right: 6px;
   font-size: 15px;
-  padding: 10px 40px;
-  border-radius: 30px;
-  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
   border: 0px;
+
 }
 button.blantershow-chat svg {
   transform: scale(1.2);
@@ -2946,7 +2944,7 @@ button.blantershow-chat svg {
   position: relative;
 }
 .info-avatar img {
-  border-radius: 100%;
+  /*border-radius: 100%;*/
   width: 50px;
   float: left;
   margin: 0 10px 0 0;
@@ -3247,6 +3245,59 @@ button.close-chat {
   margin-bottom: -4px;
 }
 
+.abrobot {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 150px 0;
+  color: #fff;
+  background: #161619;
+}
+@media only screen and (min-width: 992px) {
+  .abrobot .col-lg-5 img {
+    margin-left: 94px;
+  }
+}
 
-
+  /* Estilo del borde destellante */
+  img.blantershow-chat::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    animation: glowing 2s linear infinite;
+  }
+ /* Animación del borde destellante */
+ @keyframes glowing {
+  0% {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.burbuja{
+  background: aqua;
+  padding: 11%;
+  border-radius: 6%;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  right: 80px;
+}
+.cerrar-burbuja{
+  z-index: 1;
+  position: absolute;
+  right: 81px;
+  top: -4px;
+  width: 9px;
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */
